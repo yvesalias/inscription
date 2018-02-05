@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+  <!-- <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>-->
+  <script src="js/jquery-3.3.1.js"></script>
+  <script src="js/script.js"></script>
+
+  <!-- Include all compiled plugins (below), or include individual files as needed -->
+  <script src="bootstrap/js/bootstrap.min.js"></script>
+
+
+  <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+  <title>formulaire d\identification</title>
+
+  <!-- Bootstrap -->
+  <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <link href="css/default.css" rel="stylesheet">
+
+</head>
+
+
+<body>
+  <h1>Formulaire d'identification</h1>
+  <form>
+
+    <div>
+      <p><label for="civilite">Civilité</label></p>
+          <select class="form-control" name="civ" id="civ">
+            <option>Mr</option>
+            <option>Mme</option>
+          </select>
+    </div>
+    <div>
+      <p><label class="required" for="nom">Nom</label>
+        <input class="form-control" type="text" name="nom" id="nom" placeholder="nom" /></p>
+
+    </div>
+    <div>
+      <p><label for="prenom">Prenom</label>
+        <input class="form-control" type="text" name="prenom" id="prenom" placeholder="prenom" /></p>
+    </div>
+    <div>
+      <p><label class="required" for="email">Email</label>
+        <input class="form-control" type="email" name="mail" id="mail" placeholder="adresse@mail.com" /></p>
+    </div>
+    <div>
+      <p><label class="required" for="mot_de_passe">Motdepasse</label>
+        <input class="form-control" type="password" name="mdp" id="mdp" placeholder="" /></p>
+    </div><div>
+      <p><label for="profession">Profession</label>
+        <input class="form-control" type="text" name="prof" id="prof" placeholder="profession" /></p>
+    </div>
+    <div>
+      <p><label for="observation">Observation</label>
+        <textarea class="form-control" name="obs" rows="5"></textarea></p>
+    </div>
+    <div>
+        <button type="button" class="btn btn-primary" id="b1" center-block>Envoyer</button>
+    </div>
+
+  </form>
+    <div id="reponse">
+    </div>
+</body>
+
+</html>
